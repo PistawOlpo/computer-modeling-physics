@@ -3,6 +3,7 @@ import math
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
+p=1/8 #propability of sticking to the seed
 
 N = 1000 # size of the world
 center = [int(N/2), int(N/2)] #center of the world
@@ -65,7 +66,7 @@ while(MaxRouter <= N/2):
         wolker = on_circle(2*np.pi*np.random.rand(1), MaxRiner) # reset wolker
 
     if if_hit(wolker):
-        if np.random.random_sample()<1/8: #podej prawdopodobienstwo
+        if np.random.random_sample()<p: #podej prawdopodobienstwo
             
             world[wolker[0]][wolker[1]] = 1
             if ( (wolker[0] - center[0])**2 + (wolker[1] - center[1])**2 )**0.5 > MaxRiner-3:
