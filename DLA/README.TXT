@@ -11,3 +11,7 @@ If a particle diffuses to the aggregate (to its perimeter) is terminated and so 
 
 
 Output files are .png images.
+
+The output transformed to video can be seen on https://www.youtube.com/watch?v=h29jbdcTIKQ
+
+
